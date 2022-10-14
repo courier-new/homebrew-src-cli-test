@@ -5,11 +5,11 @@
 class SrcCli < Formula
   desc "Sourcegraph CLI"
   homepage "https://sourcegraph.com/"
-  version "4.0.2"
+  version "4.0.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/sourcegraph/src-cli/releases/download/4.0.2/src-cli_4.0.2_darwin_arm64.tar.gz"
+      url "https://github.com/sourcegraph/src-cli/releases/download/4.0.1/src-cli_4.0.1_darwin_arm64.tar.gz"
       sha256 "13d6b82e9bae1c8f9c02479c6f29d57b4e983133941b6f5e16649e62dc4054ce"
 
       def install
@@ -17,7 +17,7 @@ class SrcCli < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sourcegraph/src-cli/releases/download/4.0.2/src-cli_4.0.2_darwin_amd64.tar.gz"
+      url "https://github.com/sourcegraph/src-cli/releases/download/4.0.1/src-cli_4.0.1_darwin_amd64.tar.gz"
       sha256 "d85890575c42df0271159249fa8558bdf3ce7ccde04b786a1588a654bf28c9a8"
 
       def install
@@ -28,7 +28,7 @@ class SrcCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sourcegraph/src-cli/releases/download/4.0.2/src-cli_4.0.2_linux_arm64.tar.gz"
+      url "https://github.com/sourcegraph/src-cli/releases/download/4.0.1/src-cli_4.0.1_linux_arm64.tar.gz"
       sha256 "8fbdcf598ad99120e81eb4b51d5866b1cc6a4514d5ed3c2ab216c7b8fd3b948a"
 
       def install
@@ -36,7 +36,7 @@ class SrcCli < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sourcegraph/src-cli/releases/download/4.0.2/src-cli_4.0.2_linux_amd64.tar.gz"
+      url "https://github.com/sourcegraph/src-cli/releases/download/4.0.1/src-cli_4.0.1_linux_amd64.tar.gz"
       sha256 "c5d9b2249abd9244b7063eb664673ed53dad3e065002423ce813d66394b7fe03"
 
       def install
